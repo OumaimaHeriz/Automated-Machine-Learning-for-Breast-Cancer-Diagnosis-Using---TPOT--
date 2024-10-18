@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result">
+            <p>The tumor is likely to be: <strong>{{ result }}</strong></p>
+        </div>
+        <a href="/">Go back</a>
+        <footer>
+            <p>&copy; 2024 Breast Cancer Awareness Month</p>
+            <p> By Heriz Oumaima </p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+

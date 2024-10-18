@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(assets/img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for the entire page */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-out; /* Slide-up animation for the container */
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #d5006d; /* Pink color for breast cancer awareness */
+    font-size: 2.5em;
+    animation: zoomIn 1.5s ease-in-out; /* Zoom-in animation for the heading */
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+form {
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in; /* Fade-in effect for the form */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #d5006d; /* Pink border */
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    animation: inputSlideIn 1s ease-out; /* Slide-in animation for inputs */
+}
+
+@keyframes inputSlideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #a40050; /* Darker pink on focus */
+    box-shadow: 0 0 8px rgba(213, 0, 109, 0.5); /* Pink glow on focus */
+}
+
+/* Pink Button Animation */
+button {
+    background-color: #ff66b2; /* Pink */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+    animation: buttonPulse 2s infinite; /* Pulsing animation for the button */
+}
+
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    background-color: #ff3385; /* Darker pink on hover */
+    transform: scale(1.1); /* Enlarge button on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Result section */
+.result {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Footer animation */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for the footer */
+}
